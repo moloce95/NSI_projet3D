@@ -8,14 +8,18 @@
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   display: flex;
   flex-direction: column;
-  height: 150px;
+  height: 200px;
 }
 
 .container h1 {
-  font-size: 2em;
   margin: 0;
-  padding: 20px 0;
-  flex-grow: 1;
+  padding: 10px 0;
+  flex-grow: 0;
+}
+
+.sous-titre h2 {
+  margin: 5px 0; /* Ajoute un petit espace pour l'aérer */
+  padding-bottom: 10px;
 }
 
 .nav-buttons {
@@ -43,4 +47,9 @@
 
 .nav-buttons button:first-child {
   border-left: none;
+}
+
+footer {
+  border: 2px solid black;
+  text-align: center;
 }
