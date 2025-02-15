@@ -1,55 +1,118 @@
-.container {
-  width: 80%;
-  margin: 0 auto;
-  background-color: #f0f0f0;
-  border-radius: 15px;
-  text-align: center;
-  position: relative;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  height: 200px;
-}
+/* Importation de la police futuriste Orbitron depuis Google Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
-.container h1 {
+/* ---- STYLE GÉNÉRAL ---- */
+body {
+  background-color: #0f0e0e; /* Fond sombre pour un style high-tech */
+  font-family: "Orbitron", sans-serif; /* Police futuriste */
+  color: #00ffff; /* Texte en cyan pour un effet néon */
+  text-transform: uppercase; /* Met tout le texte en majuscules */
+  letter-spacing: 2px; /* Espacement des lettres pour une meilleure lisibilité */
   margin: 0;
-  padding: 10px 0;
-  flex-grow: 0;
+  padding: 0;
 }
 
+/* ---- CONTENEUR PRINCIPAL ---- */
+.container {
+  width: 80%; /* Largeur de 80% de la page */
+  margin: 50px auto; /* Centre le conteneur avec un espace en haut */
+  padding: 20px; /* Espace intérieur */
+  background: rgba(
+    0,
+    0,
+    0,
+    0.534
+  ); /* Fond légèrement transparent pour un effet futuriste */
+  border: 2px solid #00ffff; /* Bordure lumineuse cyan */
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 0 20px #00ffff; /* Ombre externe néon */
+  text-align: center; /* Centre le texte */
+  display: flex; /* Active Flexbox */
+  flex-direction: column; /* Empile les éléments verticalement */
+  align-items: center; /* Centre horizontalement les éléments */
+}
+
+/* ---- TITRE PRINCIPAL (h1) ---- */
+h1 {
+  font-size: 2.5em; /* Agrandit la taille du texte */
+  text-shadow: 0 0 10px #00ffff, 0 0 20px #00a3ff; /* Effet lumineux sur le texte */
+  animation: pulse 1.5s infinite alternate; /* Animation clignotante */
+  margin-bottom: 10px; /* Ajoute un petit espace en dessous */
+}
+
+/* ---- SOUS-TITRE (h2) ---- */
 .sous-titre h2 {
-  margin: 5px 0; /* Ajoute un petit espace pour l'aérer */
-  padding-bottom: 10px;
+  font-size: 1.5em; /* Taille du texte */
+  color: #00a3ff; /* Bleu plus foncé pour différencier du titre */
+  text-shadow: 0 0 5px #00a3ff; /* Effet lumineux bleu */
+  margin: 0; /* Supprime les marges par défaut */
+  padding-bottom: 15px; /* Ajoute un espace sous le h2 */
 }
 
+/* ---- BOUTONS DE NAVIGATION ---- */
 .nav-buttons {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  position: absolute;
-  bottom: 0;
-  background-color: #007bff;
-  border-radius: 0 0 15px 15px;
-  padding: 10px 0;
+  display: flex; /* Active Flexbox pour aligner les boutons horizontalement */
+  justify-content: space-around; /* Espacement uniforme entre les boutons */
+  width: 100%; /* Largeur totale */
+  position: relative; /* Position normale (pas absolue) */
+  border-radius: 0 0 15px 15px; /* Arrondit seulement le bas */
+  padding: 10px 0; /* Ajoute un peu d’espace */
 }
 
+/* ---- STYLE DES BOUTONS ---- */
 .nav-buttons button {
-  flex-grow: 1;
-  padding: 15px;
-  font-size: 1.2em;
-  color: white;
-  background-color: transparent;
-  border: none;
-  cursor: pointer;
-  transition: background-color 0.3s;
-  border-left: 1px solid #fff;
+  flex-grow: 1; /* Tous les boutons prennent la même largeur */
+  padding: 15px; /* Ajoute du remplissage */
+  font-size: 1.2em; /* Agrandit le texte */
+  color: #00ffff; /* Texte cyan */
+  background-color: transparent; /* Fond transparent */
+  border: 1px solid #00ffff; /* Bordure cyan */
+  cursor: pointer; /* Curseur en forme de main */
+  transition: background-color 0.3s, box-shadow 0.3s; /* Animation fluide */
+  text-transform: uppercase; /* Met en majuscules */
 }
 
-.nav-buttons button:first-child {
-  border-left: none;
+/* ---- EFFET LORSQUE L'UTILISATEUR SURVOLE UN BOUTON ---- */
+.nav-buttons button:hover {
+  background: #00ffff; /* Change le fond en cyan */
+  color: rgba(0, 0, 0, 0.849); /* Change le texte en noir */
+  box-shadow: 0 0 15px #00ffff; /* Ajoute une lueur autour */
 }
 
+/* ---- PARAGRAPHES ---- */
+p {
+  text-align: center; /* Centre le texte */
+  font-size: 1.2em; /* Agrandit légèrement le texte */
+  margin: 20px 10%; /* Ajoute un espace autour du paragraphe */
+  color: #cccccc; /* Gris clair pour la lisibilité */
+}
+
+/* ---- PIED DE PAGE (FOOTER) ---- */
 footer {
-  border: 2px solid black;
-  text-align: center;
+  border-top: 2px solid #00ffff; /* Ligne cyan en haut du footer */
+  text-align: center; /* Centre le texte */
+  padding: 15px 0; /* Ajoute un espace autour du texte */
+  margin-top: 30px; /* Espace entre le footer et le contenu */
+  font-size: 1em; /* Taille standard du texte */
+  background: rgba(14, 13, 13, 0.425); /* Fond semi-transparent */
+}
+/* Conteneur du laser */
+.laser-transition {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 255, 255, 0.8);
+  transform: scaleX(0);
+  transform-origin: left;
+  transition: transform 0.5s ease-in-out;
+  z-index: 1000;
+  pointer-events: none;
+  box-shadow: 0 0 30px #00ffff, 0 0 60px #00a3ff;
+}
+
+/* Quand le laser s'active */
+.laser-transition.active {
+  transform: scaleX(1);
 }
