@@ -5,8 +5,6 @@
 body {
   background-color: #0f0e0e; /* Fond sombre pour un style high-tech */
   font-family: "Orbitron", sans-serif; /* Police futuriste */
-  color: #00ffff; /* Texte en cyan pour un effet néon */
-  text-transform: uppercase; /* Met tout le texte en majuscules */
   letter-spacing: 2px; /* Espacement des lettres pour une meilleure lisibilité */
   margin: 0;
   padding: 0;
@@ -38,6 +36,8 @@ h1 {
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00a3ff; /* Effet lumineux sur le texte */
   animation: pulse 1.5s infinite alternate; /* Animation clignotante */
   margin-bottom: 10px; /* Ajoute un petit espace en dessous */
+  text-transform: uppercase;
+  color: #00ffff;
 }
 
 /* ---- SOUS-TITRE (h2) ---- */
@@ -47,6 +47,7 @@ h1 {
   text-shadow: 0 0 5px #00a3ff; /* Effet lumineux bleu */
   margin: 0; /* Supprime les marges par défaut */
   padding-bottom: 15px; /* Ajoute un espace sous le h2 */
+  text-transform: uppercase;
 }
 
 /* ---- BOUTONS DE NAVIGATION ---- */
@@ -69,7 +70,6 @@ h1 {
   border: 1px solid #00ffff; /* Bordure cyan */
   cursor: pointer; /* Curseur en forme de main */
   transition: background-color 0.3s, box-shadow 0.3s; /* Animation fluide */
-  text-transform: uppercase; /* Met en majuscules */
 }
 
 /* ---- EFFET LORSQUE L'UTILISATEUR SURVOLE UN BOUTON ---- */
@@ -81,18 +81,35 @@ h1 {
 
 /* ---- PARAGRAPHES ---- */
 p {
-  text-align: center; /* Centre le texte */
-  font-size: 1.2em; /* Agrandit légèrement le texte */
-  margin: 20px 10%; /* Ajoute un espace autour du paragraphe */
   color: #cccccc; /* Gris clair pour la lisibilité */
+  margin-left: 8px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  margin: 10px 20px;
+}
+h4 {
+  margin-left: 8px;
+  color: #00ffff; /* Texte en cyan pour un effet néon */
+}
+hr {
+  border: none;
+  height: 2px; /* Épaisseur */
+  background-color: #00588b69;
 }
 
 /* ---- PIED DE PAGE (FOOTER) ---- */
 footer {
-  border-top: 2px solid #00ffff; /* Ligne cyan en haut du footer */
+  border-top: 2px solid #00588b69; /* Ligne cyan en haut du footer */
   text-align: center; /* Centre le texte */
   padding: 15px 0; /* Ajoute un espace autour du texte */
-  margin-top: 30px; /* Espace entre le footer et le contenu */
+  margin-top: 50px; /* Espace entre le footer et le contenu */
   font-size: 1em; /* Taille standard du texte */
   background: rgba(14, 13, 13, 0.425); /* Fond semi-transparent */
+  border: 2px solid #00ffff; /* Bordure lumineuse cyan */
+  border-radius: 15px; /* Coins arrondis */
+  box-shadow: 0 0 5px #00ffff; /* Ombre externe néon */
+  margin: 10px 20px;
+}
+h5 {
+  color: #cccccc; /* Texte en cyan pour un effet néon */
 }
