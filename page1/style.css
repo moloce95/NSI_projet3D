@@ -36,10 +36,8 @@ h1 {
   text-shadow: 0 0 10px #00ffff, 0 0 20px #00a3ff; /* Effet lumineux sur le texte */
   animation: pulse 1.5s infinite alternate; /* Animation clignotante */
   margin-bottom: 10px; /* Ajoute un petit espace en dessous */
-  text-transform: uppercase;
   color: #00ffff;
 }
-
 /* ---- SOUS-TITRE (h2) ---- */
 .sous-titre h2 {
   font-size: 1.5em; /* Taille du texte */
@@ -47,7 +45,6 @@ h1 {
   text-shadow: 0 0 5px #00a3ff; /* Effet lumineux bleu */
   margin: 0; /* Supprime les marges par défaut */
   padding-bottom: 15px; /* Ajoute un espace sous le h2 */
-  text-transform: uppercase;
 }
 
 /* ---- BOUTONS DE NAVIGATION ---- */
@@ -75,7 +72,7 @@ h1 {
 /* ---- EFFET LORSQUE L'UTILISATEUR SURVOLE UN BOUTON ---- */
 .nav-buttons button:hover {
   background: #00ffff; /* Change le fond en cyan */
-  color: rgba(0, 0, 0, 0.849); /* Change le texte en noir */
+  color: black; /* Change le texte en noir */
   box-shadow: 0 0 15px #00ffff; /* Ajoute une lueur autour */
 }
 
@@ -97,9 +94,17 @@ hr {
   background-color: #00588b69;
 }
 
+h5 {
+  color: #cccccc; /* Texte en cyan pour un effet néon */
+  margin-left: 8px;
+  text-decoration: underline;
+}
+.paragraphe {
+  margin-top: -12px;
+  margin-left: 10px;
+}
 /* ---- PIED DE PAGE (FOOTER) ---- */
 footer {
-  border-top: 2px solid #00588b69; /* Ligne cyan en haut du footer */
   text-align: center; /* Centre le texte */
   padding: 15px 0; /* Ajoute un espace autour du texte */
   margin-top: 50px; /* Espace entre le footer et le contenu */
@@ -109,7 +114,4 @@ footer {
   border-radius: 15px; /* Coins arrondis */
   box-shadow: 0 0 5px #00ffff; /* Ombre externe néon */
   margin: 10px 20px;
-}
-h5 {
-  color: #cccccc; /* Texte en cyan pour un effet néon */
 }
