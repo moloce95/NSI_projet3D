@@ -72,7 +72,15 @@ h4 {
 .fa-globe {
   color: rgb(5, 162, 224); /* Remets la couleur de base */
 }
-
+.fa-share-nodes {
+  color: rgb(255, 252, 252);
+}
+.fa-microchip {
+  color: #007000; /* Vert technologique */
+}
+.icon-data {
+  color: #00bfff; /* Bleu technologique */
+}
 h5 {
   padding-top: 10px;
   color: #ecdedec2; /* Gris clair pour la lisibilité */
@@ -122,7 +130,13 @@ p {
   color: black; /* Change le texte en noir */
   box-shadow: 0 0 15px #00ff00; /* Ajoute une lueur autour */
 }
-
+.téléchargement {
+  font-size: 17px;
+  margin-left: 6px;
+}
+a {
+  color: #005470;
+}
 /* ---- PIED DE PAGE (FOOTER) ---- */
 footer {
   text-align: center; /* Centre le texte */
