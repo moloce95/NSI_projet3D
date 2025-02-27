@@ -21,9 +21,9 @@ body {
     0,
     0.534
   ); /* Fond légèrement transparent pour un effet futuriste */
-  border: 2px solid #00ff00; /* Bordure lumineuse cyan */
+  border: 2px solid #ff0000; /* Bordure lumineuse cyan */
   border-radius: 15px; /* Coins arrondis */
-  box-shadow: 0 0 20px #00ff00; /* Ombre externe néon */
+  box-shadow: 0 0 20px #ff0000; /* Ombre externe néon */
   text-align: center; /* Centre le texte */
   display: flex; /* Active Flexbox */
   flex-direction: column; /* Empile les éléments verticalement */
@@ -33,75 +33,21 @@ body {
 /* ---- TITRE PRINCIPAL (h1) ---- */
 h1 {
   font-size: 2.5em; /* Agrandit la taille du texte */
-  text-shadow: 0 0 10px #00ff00, 0 0 20px #07c220; /* Effet lumineux sur le texte */
+  text-shadow: 0 0 10px #ff0000, 0 0 20px #c90404e7; /* Effet lumineux sur le texte */
   animation: pulse 1.5s infinite alternate; /* Animation clignotante */
   margin-bottom: 10px; /* Ajoute un petit espace en dessous */
-  color: #00ff00;
+  color: #ff0000;
 }
 
 /* ---- SOUS-TITRE (h2) ---- */
 .sous-titre h2 {
   font-size: 1.5em; /* Taille du texte */
-  color: #07c220; /* Bleu plus foncé pour différencier du titre */
-  text-shadow: 0 0 5px #07c220; /* Effet lumineux bleu */
+  color: #c90404e7; /* Bleu plus foncé pour différencier du titre */
+  text-shadow: 0 0 5px #c90404e7; /* Effet lumineux bleu */
   margin: 0; /* Supprime les marges par défaut */
   padding-bottom: 15px; /* Ajoute un espace sous le h2 */
 }
 
-.programme {
-  color: #00ff00;
-  margin-left: 8px;
-}
-
-hr {
-  border: none;
-  height: 2px; /* Épaisseur */
-  background-color: #035703ec;
-}
-
-.container2 {
-  text-align: center; /* Centre les éléments à l'intérieur */
-}
-
-.theme,
-h4 {
-  display: inline-block; /* Les titres restent sur la même ligne */
-  color: white;
-}
-
-.fa-globe {
-  color: rgb(5, 162, 224); /* Remets la couleur de base */
-}
-.fa-share-nodes {
-  color: rgb(255, 252, 252);
-}
-.fa-microchip {
-  color: #007000; /* Vert technologique */
-}
-.icon-data {
-  color: #00bfff; /* Bleu technologique */
-}
-h5 {
-  padding-top: 10px;
-  color: #ecdedec2; /* Gris clair pour la lisibilité */
-  margin-left: 8px;
-  font-family: "Times New Roman", Times, serif;
-  text-align: justify;
-  margin: 10px 20px;
-  font-size: 15px;
-}
-p i.fa-arrow-right {
-  margin-left: 10px;
-  margin-right: 8px; /* Espacement entre la flèche et le texte */
-}
-/* ---- PARAGRAPHES ---- */
-p {
-  color: white; /* Gris clair pour la lisibilité */
-  font-family: "Times New Roman", Times, serif;
-  text-align: justify;
-  margin: 10px 20px;
-  font-size: 12px;
-}
 /* ---- BOUTONS DE NAVIGATION ---- */
 .nav-buttons {
   display: flex; /* Active Flexbox pour aligner les boutons horizontalement */
@@ -117,26 +63,64 @@ p {
   flex-grow: 1; /* Tous les boutons prennent la même largeur */
   padding: 15px; /* Ajoute du remplissage */
   font-size: 1.2em; /* Agrandit le texte */
-  color: #00ff00; /* Texte cyan */
+  color: #ff0000; /* Texte cyan */
   background-color: transparent; /* Fond transparent */
-  border: 1px solid #00ff00; /* Bordure cyan */
+  border: 1px solid #ff0000; /* Bordure cyan */
   cursor: pointer; /* Curseur en forme de main */
   transition: background-color 0.3s, box-shadow 0.3s; /* Animation fluide */
+  text-transform: uppercase; /* Met en majuscules */
 }
 
 /* ---- EFFET LORSQUE L'UTILISATEUR SURVOLE UN BOUTON ---- */
 .nav-buttons button:hover {
-  background: #00ff00; /* Change le fond en cyan */
+  background: #ff0000; /* Change le fond en cyan */
   color: black; /* Change le texte en noir */
-  box-shadow: 0 0 15px #00ff00; /* Ajoute une lueur autour */
+  box-shadow: 0 0 15px #ff0000; /* Ajoute une lueur autour */
 }
-.téléchargement {
-  font-size: 17px;
-  margin-left: 6px;
+h4 {
+  color: #ff3737;
+  margin-left: 8px;
 }
-a {
-  color: #005470;
+hr {
+  border: none;
+  height: 2px; /* Épaisseur */
+  background-color: #800505e7;
 }
+
+/* ---- PARAGRAPHES ---- */
+p {
+  color: white; /* Gris clair pour la lisibilité */
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  margin: 10px 20px;
+  font-size: 16px;
+}
+.container2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 75px;
+  margin-bottom: 25px;
+}
+
+/* Image avec effet néon */
+.neon-image {
+  width: 50%; /* Ajuste la taille de l'image (modifie selon ton besoin) */
+  max-width: 5000px; /* Taille max pour éviter qu'elle soit trop grande */
+  border-radius: 10px; /* Coins arrondis pour un effet plus stylé */
+
+  /* Effet de glow néon */
+  box-shadow: 0 0 10px #ff0000, 0 0 20px #c90404e7; /* Effet lumineux sur le texte */
+
+  transition: box-shadow 0.3s ease-in-out;
+}
+
+/* Effet néon plus intense au survol */
+.neon-image:hover {
+  box-shadow: 0 0 15px #ff0000, 0 0 30px #ff0000, 0 0 45px #ff0000,
+    0 0 60px #ff0000;
+}
+
 /* ---- PIED DE PAGE (FOOTER) ---- */
 footer {
   text-align: center; /* Centre le texte */
@@ -145,8 +129,8 @@ footer {
   font-size: 1em; /* Taille standard du texte */
   font-family: "Orbitron", sans-serif;
   background: rgba(14, 13, 13, 0.425); /* Fond semi-transparent */
-  border: 2px solid #00ff00; /* Bordure lumineuse cyan */
+  border: 2px solid #ff0000; /* Bordure lumineuse cyan */
   border-radius: 15px; /* Coins arrondis */
-  box-shadow: 0 0 5px #00ff00; /* Ombre externe néon */
+  box-shadow: 0 0 5px #ff0000; /* Ombre externe néon */
   margin: 10px 20px;
 }
