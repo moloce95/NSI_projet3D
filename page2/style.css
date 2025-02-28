@@ -1,6 +1,10 @@
 /* Importation de la police futuriste Orbitron depuis Google Fonts */
 @import url("https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700&display=swap");
 
+html {
+  scroll-behavior: smooth;
+}
+
 /* ---- STYLE GÉNÉRAL ---- */
 body {
   background-color: #0f0e0e; /* Fond sombre pour un style high-tech */
@@ -76,6 +80,15 @@ h1 {
   background: #ff0000; /* Change le fond en cyan */
   color: black; /* Change le texte en noir */
   box-shadow: 0 0 15px #ff0000; /* Ajoute une lueur autour */
+}
+nav a {
+  color: white;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: rgb(240, 232, 232);
+  text-decoration: underline;
 }
 h4 {
   color: #ff3737;
