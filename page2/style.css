@@ -81,18 +81,20 @@ h1 {
   color: black; /* Change le texte en noir */
   box-shadow: 0 0 15px #ff0000; /* Ajoute une lueur autour */
 }
-nav a {
+
+a {
   color: white;
   text-decoration: none;
+  margin-left: 8px;
 }
 
-nav a:hover {
-  color: rgb(240, 232, 232);
+a:hover {
+  color: rgb(172, 164, 164);
   text-decoration: underline;
 }
 h4 {
   color: #ff3737;
-  margin-left: 8px;
+  margin-left: 18px;
 }
 hr {
   border: none;
