@@ -12,6 +12,10 @@ body {
   padding: 0;
 }
 
+.logo {
+  width: 175px; /* Largeur */
+  height: auto; /* Garde les proportions */
+}
 /* ---- CONTENEUR PRINCIPAL ---- */
 .container {
   width: 80%; /* Largeur de 80% de la page */
