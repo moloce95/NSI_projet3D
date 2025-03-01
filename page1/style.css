@@ -31,12 +31,9 @@ body {
 }
 
 /* ---- TITRE PRINCIPAL (h1) ---- */
-h1 {
-  font-size: 2.5em; /* Agrandit la taille du texte */
-  text-shadow: 0 0 10px #00ffff, 0 0 20px #00a3ff; /* Effet lumineux sur le texte */
-  animation: pulse 1.5s infinite alternate; /* Animation clignotante */
-  margin-bottom: 10px; /* Ajoute un petit espace en dessous */
-  color: #00ffff;
+.logo {
+  width: 175px; /* Largeur */
+  height: auto; /* Garde les proportions */
 }
 /* ---- SOUS-TITRE (h2) ---- */
 .sous-titre h2 {
