@@ -34,13 +34,27 @@ body {
   flex-direction: column; /* Empile les éléments verticalement */
   align-items: center; /* Centre horizontalement les éléments */
 }
+p {
+  color: #cccccc; /* Gris clair pour la lisibilité */
+  margin-left: 8px;
+  font-family: "Times New Roman", Times, serif;
+  text-align: justify;
+  margin: 10px 20px;
+}
+h4 {
+  margin-left: 8px;
+  color: #ffff00; /* Texte en cyan pour un effet néon */
+}
+hr {
+  border: none;
+  height: 2px; /* Épaisseur */
+  background-color: #00588b69;
+}
 
-/* ---- TITRE PRINCIPAL (h1) ---- */
-h1 {
-  font-size: 2.5em; /* Agrandit la taille du texte */
-  text-shadow: 0 0 10px #ffff00, 0 0 20px #d8d802e0; /* Effet lumineux sur le texte */
-  animation: pulse 1.5s infinite alternate; /* Animation clignotante */
-  margin-bottom: 10px; /* Ajoute un petit espace en dessous */
+h5 {
+  color: #cccccc; /* Texte en cyan pour un effet néon */
+  margin-left: 8px;
+  text-decoration: underline;
 }
 
 /* ---- SOUS-TITRE (h2) ---- */

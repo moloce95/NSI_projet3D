@@ -91,6 +91,22 @@ p {
   color: #cccccc; /* Gris clair pour la lisibilité */
 }
 
+.affiche-1 {
+  width: 50%; /* Ajuste la largeur de l'image au conteneur */
+  max-width: 5000px; /* Maintient les proportions */
+  border-radius: 10px;
+}
+
+.affiche-2 {
+  width: 50%; /* Ajuste la largeur de l'image au conteneur */
+  max-width: 5000px; /* Maintient les proportions */
+  border-radius: 10px;
+  position: absolute ;
+  align-items:.affiche-1;
+  right: 0px;
+}
+
+
 /* ---- PIED DE PAGE (FOOTER) ---- */
 footer {
   border-top: 2px solid #ff6600; /* Ligne cyan en haut du footer */
